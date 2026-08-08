@@ -7,6 +7,7 @@
 - Added PHP 8 compatibility throughout the core, admin UI, and bundled skins.
 - Fixed the image-view parse error caused by the legacy `08` and `09` literals.
 - Fixed installer initialization for PHP 8.
+- Removed the obsolete Mozilla compatibility popup from the admin editor.
 
 ### Security
 
@@ -16,6 +17,7 @@
 - Hardened session cookies and regenerate the session ID after authentication.
 - Validate uploaded files by exact extension and detected image type.
 - Added basic browser security headers.
+- Use PHP's password hashing API for new gallery passwords while retaining support for existing legacy hashes.
 
 ### Distribution
 

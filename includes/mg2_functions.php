@@ -585,7 +585,7 @@ class mg2db {
 			$folderpwd = trim($this->all_folders[$list][8]);
 			if ($folderpwd !== '' && $folderpwd !== $_SESSION[PRE_SESSION.'folderpwd'][$list]) {
 				// PASSWORD ENTRY CORRECT?
-				if (md5(strrev(md5($_POST['password']))) === $folderpwd) {
+				if ($this->verifyPassword($_POST['password'], $folderpwd)) {
 					$_SESSION[PRE_SESSION.'folderpwd'][$list] = $folderpwd;
 					unset($_POST['password']);
 				}
@@ -618,6 +618,21 @@ class mg2db {
 		$string = str_replace("\'","'",$string);		// to avoid magic quots
 		if ($html) $string = @htmlspecialchars($string, ENT_QUOTES);
 		return $string;
+	}
+
+	// Password helpers retain compatibility with existing MG2 hashes while
+	// storing all newly created folder passwords with PHP's current algorithm.
+	function hashPassword($password) {
+		return password_hash((string)$password, PASSWORD_DEFAULT);
+	}
+
+	function verifyPassword($password, $hash) {
+		$hash = (string)$hash;
+		$info = password_get_info($hash);
+		if (!empty($info['algo'])) return password_verify((string)$password, $hash);
+
+		$legacy = md5(strrev(md5((string)$password)));
+		return hash_equals($hash, $legacy);
 	}
 
 	// kh_mod 0.2.0, changed

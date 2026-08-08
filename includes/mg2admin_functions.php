@@ -937,7 +937,7 @@ class MG2admin extends mg2db {
 		$_REQUEST['publish'] = $this->date2time($_REQUEST['publish']);
 
 		// ENCRYPT PASSWORD
-		return (!empty($_REQUEST['password']))? $password = md5(strrev(md5($_REQUEST['password']))):'';
+		return (!empty($_REQUEST['password'])) ? $this->hashPassword($_REQUEST['password']) : '';
 	}
 
 	//

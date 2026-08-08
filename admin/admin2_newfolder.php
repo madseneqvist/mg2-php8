@@ -79,7 +79,7 @@
 <tr valign="top">
 	<td class="td_actions_right">&nbsp;<?php echo $mg2->lang['publish'];?></td>
 	<td class="td_actions_right">
-	<input type="text" name="publish" id="publish" value="<?php echo $mg2->time2date('', true);?>" size="19" class="admintext" autocomplete="off" />
+	<input type="text" name="publish" id="publish" value="<?php echo $mg2->time2date('', true);?>" size="19" class="admintext" autocomplete="new-password" />
 <?php
 		if (isset($Calendar) && gettype($Calendar) == 'object') {
 			echo '&nbsp;'.
@@ -102,7 +102,7 @@
 <tr valign="top">
 	<td class="td_actions">&nbsp;<?php echo $mg2->lang['password'];?></td>
 	<td class="td_actions">
-		<input type="password" name="password" value="" size="30" class="admintext" autocomplete="off" />
+		<input type="password" name="password" value="" size="30" class="admintext" autocomplete="new-password" />
 	</td>
 </tr>
 <tr>

@@ -187,7 +187,7 @@ if ($folderID > 1) {
 <tr>
   <td class="td_actions_right" width="100"><?php echo $this->lang['newpassword'];?></td>
   <td class="td_actions_right">
-    <input type="password" name="password" value="" size="40" class="admintext" />
+    <input type="password" name="password" value="" size="40" class="admintext" autocomplete="new-password" />
   </td>
 </tr>
 <tr>

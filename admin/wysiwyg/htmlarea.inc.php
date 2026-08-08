@@ -6,7 +6,7 @@
    _editor_lang  = "en";
 </script>
 
-<script type="text/javascript" src="<?php echo ADMIN_FOLDER;?>wysiwyg/htmlarea.js"></script>
+<script type="text/javascript" src="<?php echo ADMIN_FOLDER;?>wysiwyg/htmlarea.js?v=20260808"></script>
 <script type="text/javascript" defer="defer">
 <!--
 var config = new HTMLArea.Config();
