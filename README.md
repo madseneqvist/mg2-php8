@@ -32,6 +32,14 @@ See [BACKLOG.md](BACKLOG.md) for scope, constraints, and other planned work.
 
 This repository contains application code only. Photographs, gallery databases, settings, logs, passwords, and server backups are intentionally excluded.
 
+## Still in use
+
+MG2 has not entirely disappeared from the public web. A global search performed on 8 August 2026 found and directly verified **at least three independently hosted public websites** still serving pages with the exact `Powered by MG2 v0.5.1` fingerprint. The maintained example at [galleri.eneq.dk](https://galleri.eneq.dk/) is one of them.
+
+This is a conservative, evidence-based lower bound—not an estimate of total installations. Search engines do not index private, password-protected, unlinked, or robot-excluded galleries, and sites may remove the identifying footer. Multiple MG2 pages on the same domain were counted as one deployment. Historical forum mentions, archived pages, source repositories, and the separately maintained kh_mod demonstration were not included.
+
+The third-party legacy installations are not catalogued here because unpatched MG2 0.5.1 has published security advisories. Their continued existence is noted only as evidence that this small gallery still has users more than twenty years after its release.
+
 ## Screenshots
 
 Gallery overview:
