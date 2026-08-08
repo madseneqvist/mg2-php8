@@ -6,6 +6,18 @@ The goal is to preserve MG2's small, flat-file, dependency-free photo gallery wh
 
 This repository contains application code only. Photographs, gallery databases, settings, logs, passwords, and server backups are intentionally excluded.
 
+## Screenshots
+
+Gallery overview:
+
+![MG2 gallery overview showing photo folders](docs/screenshots/gallery-overview.png)
+
+Individual image view with navigation and EXIF information:
+
+![MG2 individual image view](docs/screenshots/image-view.png)
+
+Screenshots are from the maintained gallery at [galleri.eneq.dk](https://galleri.eneq.dk/) and are included with permission. The displayed photographs remain copyright Mads Eneqvist.
+
 ## Project status
 
 This is preservation work on a legacy application. It has received a focused PHP 8 compatibility and security pass, but not a comprehensive professional security audit. Test upgrades on a copy of your gallery, keep regular backups, and do not treat the application as suitable for high-risk or sensitive deployments.
