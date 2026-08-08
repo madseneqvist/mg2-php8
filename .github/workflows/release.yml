@@ -1,0 +1,43 @@
+name: Build release package
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Build upload-ready archive
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          package="mg2-php8-${RELEASE_TAG#v}.zip"
+          zip -r "$RUNNER_TEMP/$package" . \
+            -x '.git/*' \
+               '.github/*' \
+               '.gitignore' \
+               '*/.gitkeep'
+          cd "$RUNNER_TEMP"
+          sha256sum "$package" > "$package.sha256"
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          package="mg2-php8-${RELEASE_TAG#v}.zip"
+          gh release create "$RELEASE_TAG" \
+            "$RUNNER_TEMP/$package" \
+            "$RUNNER_TEMP/$package.sha256" \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "MG2 PHP 8 ${RELEASE_TAG#v}" \
+            --generate-notes

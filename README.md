@@ -20,11 +20,17 @@ This is preservation work on a legacy application. It has received a focused PHP
 
 No Composer packages, JavaScript build tools, or database server are needed.
 
+## Download
+
+For the traditional MG2 installation experience, download the ready-to-upload ZIP from the [latest GitHub release](https://github.com/madseneqvist/mg2-php8/releases/latest). The release also includes a SHA-256 checksum file so the download can be verified.
+
+The ZIP contains the gallery files at its root. Extract it, upload its contents to `public_html` (or a gallery subdirectory), and then open `mg2_install.php` in your browser.
+
 ## New installation
 
 ### 1. Download MG2 PHP 8
 
-Clone the repository:
+Download the ready-to-upload ZIP from the [latest release](https://github.com/madseneqvist/mg2-php8/releases/latest), or clone the repository:
 
 ```sh
 git clone https://github.com/madseneqvist/mg2-php8.git
