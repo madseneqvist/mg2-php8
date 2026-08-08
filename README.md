@@ -127,7 +127,7 @@ Do not run the installer over an existing gallery.
 
 Existing gallery password hashes remain supported. Newly created gallery passwords use PHP's current password hashing API. The administrator password remains compatible with the original MG2 settings format.
 
-Because custom skins may contain old PHP syntax, they may need their own PHP 8 compatibility updates.
+All nine skins bundled with this repository have been updated for PHP 8. Third-party skins or locally customized templates copied from an older MG2 installation may still contain legacy PHP syntax and should be reviewed separately before use.
 
 ## Backups
 

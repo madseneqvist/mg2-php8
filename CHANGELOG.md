@@ -8,6 +8,7 @@
 - Fixed the image-view parse error caused by the legacy `08` and `09` literals.
 - Fixed installer initialization for PHP 8.
 - Removed the obsolete Mozilla compatibility popup from the admin editor.
+- Updated PHP templates across all nine bundled skins for PHP 8 compatibility.
 
 ### Security
 
