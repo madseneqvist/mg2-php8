@@ -204,6 +204,7 @@ if($_REQUEST['step'] == '3') {
 	$filebuffer.= '$mg2->slideshowdelay = '.chr(34). "10" .chr(34).";\n";
 	$filebuffer.= '$mg2->websitelink = '.chr(34).chr(34).";\n";
 	$filebuffer.= '$mg2->websitetext = '.chr(34)."Home".chr(34).";\n";						// kh_mod 0.1.0, add
+	$filebuffer.= '$mg2->ga4measurementid = '.chr(34).chr(34).";\n";
 	$filebuffer.= '$mg2->accesstime = '.chr(34)."15".chr(34).";\n";							// kh_mod 0.1.0, add
 	$filebuffer.= '$mg2->extendedset = '.chr(34)."28".chr(34).";\n";							// kh_mod 0.1.0, add
 	$filebuffer.= '$mg2->installdate = '.chr(34). time() .chr(34).";\n";

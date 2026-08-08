@@ -1190,6 +1190,13 @@ class MG2admin extends mg2db {
 		$_REQUEST['imagefolder']	= $this->charfix($_REQUEST['imagefolder'], '/');	// kh_mod 0.1.0, add
 		$_REQUEST["defaultlang"]	= $this->charfix($_REQUEST["defaultlang"], '/');	// kh_mod 0.1.0, add
 		$_REQUEST['extensions']		= str_replace(' ','',$_REQUEST['extensions']);		// kh_mod 0.1.0, add
+		$ga4measurementid = strtoupper(trim(isset($_REQUEST['ga4measurementid']) ? $_REQUEST['ga4measurementid'] : ''));
+		$ga4error = '';
+		if ($ga4measurementid !== '' && !preg_match('/^G-[A-Z0-9]{4,20}$/D', $ga4measurementid)) {
+			$ga4measurementid = $this->ga4measurementid;
+			$ga4error = '<br /><br /><div style="color:red">Invalid GA4 Measurement ID. Use a value such as G-XXXXXXXXXX.</div>';
+		}
+		$this->ga4measurementid = $ga4measurementid;
 		$_REQUEST["commentmode"]	= ($_REQUEST["commentmode"])?	 	1:0;					// kh_mod 0.1.0, add
 		$_REQUEST["jsvalidate"]		= ($_REQUEST["jsvalidate"])?	 	1:0;					// kh_mod 0.1.0, add
 		$_REQUEST["sendmail"]		= ($_REQUEST["sendmail"])?		 	1:0;					// kh_mod 0.1.0, add
@@ -1269,6 +1276,8 @@ class MG2admin extends mg2db {
 			$this->status = $this->lang['settingssaved'];
 		}
 
+		$this->status.= $ga4error;
+
 		// ALLOWED FILE EXTENTIONS, kh_mod 0.2.0, add
 		$this->extensions = strtolower($_REQUEST["extensions"]);
 		$this->extensions = str_replace(' ','',$this->extensions);
@@ -1323,6 +1332,7 @@ class MG2admin extends mg2db {
 		$filebuffer.= '$mg2->slideshowdelay = '.		  $this->slideshowdelay.";\n";
 		$filebuffer.= '$mg2->websitelink = '.	chr(34).$_REQUEST["websitelink"].chr(34).";\n";
 		$filebuffer.= '$mg2->websitetext = '.	chr(34).$_REQUEST["websitetext"].chr(34).";\n";		// kh_mod 0.1.0, add
+		$filebuffer.= '$mg2->ga4measurementid = '.chr(34).$this->ga4measurementid.chr(34).";\n";
 		$filebuffer.= '$mg2->accesstime = '.	chr(34).$_REQUEST["accesstime"].chr(34).";\n";		// kh_mod 0.1.0, add
 		$filebuffer.= '$mg2->extendedset = '.			  $this->extendedset.";\n";						// kh_mod 0.2.0, changed
 		$filebuffer.= '$mg2->installdate = '.	chr(34).$this->installdate .chr(34).";\n";

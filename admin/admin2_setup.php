@@ -39,6 +39,13 @@ function confirmAction(type) {
   </td>
 </tr>
 <tr>
+  <td class="td_setup" width="300">Google Analytics 4 Measurement ID</td>
+  <td class="td_setup">
+    <input type="text" name="ga4measurementid" value="<?php echo htmlspecialchars($this->ga4measurementid, ENT_QUOTES, 'UTF-8');?>" size="30" maxlength="22" class="admintext" placeholder="G-XXXXXXXXXX" />
+    <br /><small>Optional. Leave blank to disable GA4.</small>
+  </td>
+</tr>
+<tr>
 	<td class="td_setup" width="300">HTML-Metatag 'title' (gallery)</td>
 	<td class="td_setup">
 		<input type="checkbox" style="vertical-align:middle;" name="_gallery"	 <?php if($this->metaseting & 1) echo 'checked="checked"';?> value="1" />

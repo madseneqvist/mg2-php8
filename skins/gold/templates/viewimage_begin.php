@@ -8,6 +8,7 @@
 	<meta name="robots" content="<?php $mg2->output('robots');?>" />
 	<link href="skins/<?php $mg2->output('activeskin');?>/css/style.css" rel="stylesheet" type="text/css" />
 	<?php	$mg2->jsformvalid(); // necessary for onsubmit="return validateCompleteForm(this,'error') in 'viewimage_comments.php'?>
+	<?php $mg2->ga4tag();?>
 </head>
 <body class="mg2body">
 <div align="center" style="font-weight:bold"><?php $mg2->output('status');?></div>

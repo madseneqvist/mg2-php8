@@ -552,6 +552,16 @@ class mg2db {
 		}
 	}
 
+	// Render Google Analytics 4 only when a valid Measurement ID is configured.
+	function ga4tag() {
+		$measurementID = strtoupper(trim((string)$this->ga4measurementid));
+		if (!preg_match('/^G-[A-Z0-9]{4,20}$/D', $measurementID)) return;
+
+		$escapedID = htmlspecialchars($measurementID, ENT_QUOTES, 'UTF-8');
+		echo '<script async src="https://www.googletagmanager.com/gtag/js?id='. $escapedID .'"></script>'. "\n";
+		echo '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag(\'js\',new Date());gtag(\'config\',\''. $escapedID .'\');</script>'. "\n";
+	}
+
 	//
 	// GET GD LIB VERSION
 	//

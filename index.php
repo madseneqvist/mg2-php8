@@ -89,6 +89,7 @@ $mg2->imagefolder = 'pictures';
 $mg2->extendedset = '28';	// 0, 0, 1, 1, 1
 $mg2->commentsets =  '6';	// 0, 1, 1, 0
 $mg2->showexif    =  '0';
+$mg2->ga4measurementid = '';
 
 // READ FILE SETTINGS
 @include('includes/mg2_version.php');

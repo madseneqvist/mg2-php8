@@ -9,6 +9,7 @@
 	<meta name="robots" content="<?php $mg2->output('robots');?>" />
 	<meta http-equiv="expires" content="0" />
 	<link href="skins/<?php $mg2->output('activeskin');?>/css/style.css" rel="stylesheet" type="text/css" />
+	<?php $mg2->ga4tag();?>
 </head>
 <body class="mg2body">
 <table cellspacing="0" cellpadding="0" class="table-headline" width="100%">

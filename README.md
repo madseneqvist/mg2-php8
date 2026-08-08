@@ -152,6 +152,13 @@ Keep backups outside the public web root and test that they can be restored.
 - Added basic browser security headers.
 - Removed the obsolete browser-support popup from the admin editor.
 - Added modern hashing for new protected-gallery passwords while retaining legacy verification.
+- Added optional Google Analytics 4 support, configurable from the admin interface with a GA4 Measurement ID.
+
+### Google Analytics 4
+
+To enable GA4, open **Admin → Setup**, enter a Measurement ID such as `G-XXXXXXXXXX` in the **Google Analytics 4 Measurement ID** field, and save. MG2 adds the Google tag to gallery, image, and slideshow pages across every bundled skin. Leave the field blank to disable analytics.
+
+Only the Measurement ID is stored. MG2 validates the `G-...` format and does not accept arbitrary analytics markup through the admin interface. Site owners remain responsible for consent notices and cookie/privacy compliance required in their jurisdiction.
 
 See [CHANGELOG.md](CHANGELOG.md) for the change history and [SECURITY.md](SECURITY.md) for security guidance and vulnerability reporting.
 

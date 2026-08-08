@@ -75,6 +75,7 @@ $mg2 = new MG2admin;
 // BASIC SETTINGS
 $mg2->imagefolder = 'pictures';
 $mg2->extendedset = '28';	// 0, 0, 1, 1, 1
+$mg2->ga4measurementid = '';
 
 // READ FILE SETTINGS
 include('includes/mg2_version.php');

@@ -10,6 +10,10 @@
 - Removed the obsolete Mozilla compatibility popup from the admin editor.
 - Updated PHP templates across all nine bundled skins for PHP 8 compatibility.
 
+### Features
+
+- Added optional Google Analytics 4 integration configurable from Admin → Setup.
+
 ### Security
 
 - Removed the temporary development-login bypass.

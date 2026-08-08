@@ -7,13 +7,8 @@
 	<meta name="title" content="<?php $mg2->output('pagetitle');?>" />
 	<meta name="robots" content="<?php $mg2->output('robots');?>" />
 	<link href="skins/<?php $mg2->output('activeskin');?>/css/style.css" rel="stylesheet" type="text/css" />
+	<?php $mg2->ga4tag();?>
 </head>
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-3510938-2";
-urchinTracker();
-</script>
 <body class="mg2body">
 <table cellspacing="0" cellpadding="0" class="table-top" width="100%">
 <tr>
