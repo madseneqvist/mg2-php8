@@ -23,6 +23,13 @@ That remains the appeal of MG2. It is a small, direct gallery for people who wan
 - **Free and open source** — distributed under the GNU General Public License.
 - **Dependency-free deployment** — upload the files to ordinary PHP hosting and run the browser installer.
 
+### Planned features
+
+- **Modern large-image viewer** — responsive images, higher-resolution source selection, fullscreen viewing, zoom, touch gestures, and keyboard navigation using a locally bundled PhotoSwipe release.
+- **Configurable display size** — choose a maximum gallery image width from the admin interface while retaining a lightweight no-JavaScript fallback.
+
+See [BACKLOG.md](BACKLOG.md) for scope, constraints, and other planned work.
+
 This repository contains application code only. Photographs, gallery databases, settings, logs, passwords, and server backups are intentionally excluded.
 
 ## Screenshots
