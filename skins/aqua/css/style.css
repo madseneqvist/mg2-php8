@@ -1,0 +1,258 @@
+/* THUMB :  WIDTH, HEIGHT & FONT */
+table.thumb td a, .table.thumb td a:link, .table.thumb td a:visited, .table.thumb td a:hover, .table.thumb td a:visited:hover {
+   color: #616169;
+	font-size: 9pt;
+   display: block;
+   padding-top: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+	padding-bottom: 2px;
+   text-decoration: none;
+   width: 162px;
+	_height:		208px; /*IE up to version 6*/
+	min-height: 208px;
+	max-height: 500px;
+}
+/* THUMB : COLORS */
+table.thumb td a:link, table.thumb td a:visited {
+   background-color: #CCCEFF;
+   border: 2px dotted #ACADFF;
+	text-decoration: none;
+}
+/* THUMB : COLORS : HOVER */
+table.thumb td a:hover {
+   background-color: #B9BBFF;
+   border: 2px dotted #484AFF;
+}
+/* SUBFOLDER : WIDTH, HEIGHT & FONT  */
+table.subfolder td a, .table.subfolder td a:link, .table.subfolder td a:visited, .table.subfolder td a:hover, .table.subfolder td a:visited:hover {
+   color: #616169;
+	font-size: 9pt;
+	font-weight: bold;
+   display: block;
+   padding-top: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+	padding-bottom: 2px;
+   text-decoration: none;
+   width: 162px;
+	_height:		206px; /*IE up to version 6*/
+	min-height: 206px;
+	max-height: 500px;
+	text-decoration: none;
+}
+table.marknew td a {
+	background-image: url(../images/new.gif);
+   background-repeat: no-repeat;
+	background-position: bottom right;
+}
+/* SUBFOLDER : COLORS */
+table.subfolder td a:link, table.subfolder td a:visited {
+   background-color: #BFC1FF;
+   border: 2px dotted #8687FF;
+	text-decoration: none;
+}
+/* SUBFOLDER : COLORS : HOVER */
+table.subfolder td a:hover {
+   background-color: #A8ABFF;
+   border: 2px dotted #484AFF;
+}
+/* ALL : MARGIN */
+table.subfolder, table.thumb {
+   border-collapse: collapse;
+	text-align:center;
+   margin: 5px;
+}
+/* ALL : THUMB BORDERS */
+table.border td a .thumb, table.thumb td a .thumb{
+   border: 1px solid #ACADFF;
+}
+table.subfolder td a img, table.thumb td a img{
+   border: 0;
+}
+/* TABLE ABOVE HEADLINE */
+.table-top {
+	font-size: 9pt;
+	text-decoration: none;
+   vertical-align: top;
+	height: 20px;
+	border: 0;
+}
+
+/* HEADLINE BAR */
+.table-headline {
+	text-decoration: none;
+   vertical-align: top;
+	text-align: right;
+	height: 30px;
+	background-color: #CCCEFF;
+	border-bottom: 2px dotted #8687FF;
+	border-top: 2px dotted #8687FF;
+	letter-spacing: 5px;
+	padding-right: 5px;
+}
+.headline{
+   font-size: 12pt;
+	font-weight: bold;
+	text-align: right;
+	color: #797983;
+}
+
+/* FOLDER INTRO TEXT */
+.introtext {
+	font-size: 10pt;
+   margin: 6px 12px 6px 12px;
+	text-align: left;
+	color: #797983;
+}
+
+/* NAVIGATION THUMBS PROPERTIES */
+table.minithumb .activ {
+   background-color: #B9BBFF;
+   border: 2px dotted #484AFF;
+}
+table.minithumb .inactiv {
+   border: 0px;
+}
+
+/* VIEWIMAGE IMAGE PROPERTIES */
+.viewimage {
+	border: solid 1px #9E9E9E;
+	background-color: #DCDCDC;
+}
+
+/* ICONBAR IN HEADLINE */
+.iconbar{
+	padding-top:  3px;
+	padding-left: 6px;
+	padding-bottom: 4px;
+	text-align: left;
+   vertical-align: top;
+	letter-spacing: 1px;
+	color: #74747F;
+}
+
+/* IMAGE DESCRIPTION */
+.description {
+	font-size: 8pt;
+	font-weight: bold;
+	text-align: center;
+	color: #0001A8;
+	text-decoration: none;
+}
+
+/* COPYRIGHT NOTICE */
+.copyright {
+	font-size: 9pt;
+	color: #74747F;
+   text-align: center;
+}
+
+/* EXIF TABLE */
+.exif {
+	width: 565px;
+	font-size: 8pt;
+	color: #525252;
+	text-align: center;
+	border: 0;
+}
+.item {
+	white-space: nowrap;
+}
+
+/* STRONG, USED IN EXIF TABLE */
+strong {
+	font-size: 8pt;
+	color: #00A201;
+}
+
+/* COMMENT TABLE */
+.table-comments {
+	font-size: 8pt;
+	color: #525252;
+	text-decoration: none;
+	border: 0px;
+	line-height: 10pt;
+   text-align: left;
+}
+
+/* COMMENT DATE, USER ETC. */
+.comment-headline {
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+}
+
+.comment-aboveline {
+	width: 550px;
+	height: 20px;
+	vertical-align: bottom;
+	border-bottom: 1px solid #525252;
+	padding: 5px;
+}
+
+/* THE COMMENT */
+.comment-belowline {
+	width: 550px;
+	height: 20px;
+	vertical-align: top;
+	padding: 5px;
+}
+
+/* AUTO SCROLL BARS IN TEXTAREAS */
+textarea {
+	overflow: auto;
+}
+
+/* COMMENT INPUT FIELD */
+.comment-textfield {
+	border: 1px dashed #AAAAAA;
+	background-color: #DDDDDD;
+	color: #525252;
+}
+
+/* COMMENT INPUT FIELD ERROR*/
+.error {
+	border: 1px solid red;
+	background-color: #DDDDDD;
+	color: #525252;
+	background-image: url(../images/warning_obj.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+}
+
+/* COMMENT SUBMIT BUTTON */
+.comment-button {
+	font-size: 8pt;
+	color: #525252;
+	background-color: #DDDDDD;
+	border: 1px dashed #AAAAAA;
+	padding: 2px;
+}
+
+/* POWERED BY MG2 CREDITS (DO NOT REMOVE FROM SCRIPT!) */
+.credits {
+	font-size: 8pt;
+	color: #797983;
+   text-align: center;
+}
+
+/* BODY PROPERTIES */
+.mg2body {
+	font-family: tahoma, verdana, arial, helvetica, sans-serif;
+   font-size: 8pt;
+	color: black;
+	background-color: #D7D8FF;
+	margin: 0px;
+   padding: 0px;
+}
+
+/* LINK PROPERTIES */
+.mg2body a:link, .mg2body a:visited {
+   color: #404040; text-decoration: underline;
+}
+.mg2body a:hover, .mg2body a:visited:hover { 
+   color: #404040; text-decoration: none;
+}

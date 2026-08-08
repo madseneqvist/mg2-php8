@@ -1,0 +1,258 @@
+/* THUMB :  WIDTH, HEIGHT & FONT */
+table.thumb td a, .table.thumb td a:link, .table.thumb td a:visited, .table.thumb td a:hover, .table.thumb td a:visited:hover {
+	font-size: 8pt;
+   display: block;
+   padding-top: 5px;
+   padding-left: 3px;
+   padding-right: 3px;
+	padding-bottom: 2px;
+   text-decoration: none;
+   width: 158px;
+	_height:		208px; /*IE up to version 6*/
+	min-height: 208px;
+	max-height: 500px;
+}
+/* THUMB : COLORS */
+table.thumb td a:link, table.thumb td a:visited {
+   background-color: white;
+   border: 1px solid #BDBDBD;
+	text-decoration: none;
+}
+/* THUMB : COLORS : HOVER */
+table.thumb td a:hover {
+   background-color: white;
+   border: 1px solid #878787;
+}
+/* SUBFOLDER : WIDTH, HEIGHT & FONT  */
+table.subfolder td a, .table.subfolder td a:link, .table.subfolder td a:visited, .table.subfolder td a:hover, .table.subfolder td a:visited:hover {
+	color: #878787;
+	font-size: 8pt;
+	font-weight: bold;
+   display: block;
+   padding-top: 5px;
+   padding-left: 3px;
+   padding-right: 3px;
+	padding-bottom: 2px;
+   text-decoration: none;
+   width: 158px;
+	_height:		206px; /*IE up to version 6*/
+	min-height: 206px;
+	max-height: 500px;
+}
+table.marknew td a {
+	background-image: url(../images/new.gif);
+   background-repeat: no-repeat;
+	background-position: bottom right;
+}
+/* SUBFOLDER : COLORS */
+table.subfolder td a:link, table.subfolder td a:visited {
+   background-color: White;
+   border-top: 1px solid #BDBDBD;
+   border-left: 1px solid #BDBDBD;
+   border-right: 1px solid #BDBDBD;
+   border-bottom: 1px solid #878787;
+	text-decoration: none;
+}
+/* SUBFOLDER : COLORS : HOVER */
+table.subfolder td a:hover {
+   background-color: White;
+   border: 1px solid #878787;
+}
+/* ALL : MARGIN */
+table.subfolder, table.thumb {
+   border-collapse: collapse;
+	text-align:center;
+   margin: 10px;
+}
+/* ALL : THUMB BORDERS */
+table.border td a .thumb, table.thumb td a .thumb{
+   border: 1px solid #BDBDBD;
+}
+table.subfolder td a img, table.thumb td a img{
+   border: 0;
+}
+/* TABLE ABOVE HEADLINE */
+.table-top {
+	font-size: 9pt;
+	text-decoration: none;
+   vertical-align: top;
+	height: 22px;
+	border: 0;
+}
+
+/* HEADLINE BAR */
+.table-headline {
+	text-decoration: none;
+   vertical-align: top;
+	text-align: right;
+	height: 25px;
+	background-color: White;
+	border-top: 1px solid #BDBDBD;
+	letter-spacing: 5px;
+	padding-right: 5px;
+}
+.headline{
+   font-size: 11pt;
+	text-align: right;
+	color: #878787;
+}
+/* FOLDER INTRO TEXT */
+.introtext {
+   font-size: 10pt;
+   margin: 6px 12px 6px 12px;
+	text-align: left;
+	color: #5F5F5F;
+}
+
+/* NAVIGATION THUMBS PROPERTIES */
+table.minithumb .activ {
+   background-color: #B9BBFF;
+   border: 1px solid #BDBDBD;
+}
+table.minithumb .inactiv {
+   border: 0px;
+}
+
+/* VIEWIMAGE IMAGE PROPERTIES */
+.viewimage {
+	border: 1px solid #BDBDBD;
+	background-color: white;
+}
+
+/* ICONBAR IN HEADLINE */
+.iconbar{
+	padding-left: 6px;
+	padding-top:  3px;
+	text-align: left;
+   vertical-align: top;
+}
+
+/* IMAGE DESCRIPTION */
+.description {
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: center;
+	color: #5F5F5F;
+	text-decoration: none;
+}
+
+/* COPYRIGHT NOTICE */
+.copyright {
+	font-size: 9pt;
+	color: #BDBDBD;
+   text-align: center;
+}
+
+/* EXIF TABLE */
+.exif {
+	width: 565px;
+	font-size: 9pt;
+	color: #878787;
+	text-align: center;
+	border: 0px;
+}
+.item {
+	white-space: nowrap;
+}
+
+/* STRONG, USED IN EXIF TABLE */
+strong {
+	font-size: 8pt;
+	color: #878787;
+}
+
+/* COMMENT TABLE */
+.table-comments {
+	font-size: 9pt;
+	color: #878787;
+	text-decoration: none;
+	border: 0px;
+	line-height: 11pt;
+   text-align: left;
+}
+
+/* COMMENT DATE, USER ETC. */
+.comment-headline {
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+}
+
+.comment-aboveline {
+	font-size: 9pt;
+	text-align: left;
+	color: #878787;
+	text-decoration: none;
+	font-style: italic;
+	border: 0px;
+	height: 30px;
+	vertical-align: bottom;
+}
+
+/* THE COMMENT */
+.comment-belowline {
+	font-size: 9pt;
+	text-align: left;
+	color: #878787;
+	text-decoration: none;
+	font-style: italic;
+	border-top: 1px solid #BDBDBD;
+}
+
+/* AUTO SCROLL BARS IN TEXTAREAS */
+textarea {
+	overflow: auto;
+}
+
+/* COMMENT INPUT FIELD */
+.comment-textfield {
+	border: 1px solid #BDBDBD;
+	background-color: white;
+	color: #878787;
+}
+
+/* COMMENT INPUT FIELD ERROR*/
+.error {
+	border: 1px solid red;
+	background-color: white;
+	color: #878787;
+	background-image: url(../images/warning_obj.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+}
+
+/* COMMENT SUBMIT BUTTON */
+.comment-button {
+	font-size: 9pt;
+	color: #878787;
+	background-color: white;
+	border: 1px solid #BDBDBD;
+	padding: 1px;
+}
+
+/* POWERED BY MG2 CREDITS (DO NOT REMOVE FROM SCRIPT!) */
+.credits {
+	font-size: 10pt;
+	color: #878787;
+   text-align: center;
+}
+
+/* BODY PROPERTIES */
+.mg2body {
+	font-family: century gothic, ms sans serif, arial, tahoma, verdana, helvetica, sans-serif;
+   font-size: 9pt;
+	color: #BDBDBD;
+	background-color: white;
+	margin: 0;
+   padding: 0;
+}
+
+/* LINK PROPERTIES */
+.mg2body a:link, .mg2body a:visited {
+   color: #5F5F5F; text-decoration: none;
+}
+.mg2body a:hover, .mg2body a:visited:hover { 
+   color: #5F5F5F; text-decoration: none;
+}

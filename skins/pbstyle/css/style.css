@@ -1,0 +1,253 @@
+/* THUMB :  WIDTH, HEIGHT & FONT */
+table.thumb td a, .table.thumb td a:link, .table.thumb td a:visited, .table.thumb td a:hover, .table.thumb td a:visited:hover {
+   color: #ccccff;
+	font-size: 9pt;
+   display: block;
+   padding-top: 5px;
+   padding-left: 3px;
+   padding-right: 3px;
+	padding-bottom: 2px;
+   text-decoration: none;
+   width: 158px;
+ 	_height:		208px; /*IE up to version 6*/
+	min-height: 208px;
+	max-height: 500px;
+}
+/* THUMB : COLORS */
+table.thumb td a:link, table.thumb td a:visited {
+   background-color: #262626;
+   border: 1px solid #000000;
+	text-decoration: none;
+}
+/* THUMB : COLORS : HOVER */
+table.thumb td a:hover {
+   background-color: #191919;
+   border: 1px solid #5979C4;
+}
+/* SUBFOLDER : WIDTH, HEIGHT & FONT  */
+table.subfolder td a, .table.subfolder td a:link, .table.subfolder td a:visited, .table.subfolder td a:hover, .table.subfolder td a:visited:hover {
+   color: #ccccff;
+	font-size: 8pt;
+	font-weight: bold;
+   display: block;
+   padding-top: 5px;
+   padding-left: 3px;
+   padding-right: 3px;
+	padding-bottom: 5px;
+   text-decoration: none;
+   width: 158px;
+	_height:		206px; /*IE up to version 6*/
+	min-height: 206px;
+	max-height: 500px;
+}
+table.marknew td a {
+	background-image: url(../images/new.gif);
+   background-repeat: no-repeat;
+	background-position: bottom right;
+}
+/* SUBFOLDER : COLORS */
+table.subfolder td a:link, table.subfolder td a:visited {
+   background-color: #262626;
+   border: 1px solid #000000;
+	text-decoration: none;
+}
+/* SUBFOLDER : COLORS : HOVER */
+table.subfolder td a:hover {
+   background-color: #191919;
+   border: 1px solid #5979C4;
+}
+/* ALL : MARGIN */
+table.subfolder, table.thumb {
+   border-collapse: collapse;
+	text-align:center;
+   margin: 10px;
+}
+/* ALL : THUMB BORDERS */
+table.border td a .thumb, table.thumb td a .thumb{
+   border: 1px solid #000000;
+}
+table.subfolder td a img, table.thumb td a img{
+   border: 0px;
+}
+/* TABLE ABOVE HEADLINE */
+.table-top {
+	font-size: 9pt;
+	text-decoration: none;
+   vertical-align: top;
+	height: 20px;
+	border: 0px;
+}
+
+/* HEADLINE BAR */
+.table-headline {
+	text-decoration: none;
+   vertical-align: top;
+	text-align: right;
+	height: 30px;
+	background-color: #191919;
+	border-bottom: 1px dashed #5979C4;
+	letter-spacing: 5px;
+	padding-right: 5px;
+}
+.headline{
+   font-size: 12pt;
+	font-weight: bold;
+	text-align: right;
+	color: #ccccff;
+}
+
+/* FOLDER INTRO TEXT */
+.introtext {
+   margin: 6px 12px 6px 12px;
+	text-align: left;
+	color: #797983;
+}
+
+/* NAVIGATION THUMBS PROPERTIES */
+table.minithumb .activ {
+   background-color: #B9BBFF;
+   border: 1px dashed #5979C4;
+}
+table.minithumb .inactiv {
+   border: 0px;
+}
+
+/* VIEWIMAGE IMAGE PROPERTIES */
+.viewimage {
+	border: solid 1px #000000;
+	background-color: #2d2d2d;
+}
+
+/* ICONBAR IN HEADLINE */
+.iconbar{
+	padding-top:  3px;
+	padding-left: 6px;
+	text-align: left;
+   vertical-align: top;
+	letter-spacing: 1px;
+}
+
+/* IMAGE DESCRIPTION */
+.description {
+	font-size: 8pt;
+	font-weight: bold;
+	text-align: center;
+	color: #ccccff;
+	text-decoration: none;
+}
+
+/* COPYRIGHT NOTICE */
+.copyright {
+	font-size: 9pt;
+	color: #797983;
+   text-align: center;
+}
+
+/* EXIF TABLE */
+.exif {
+	width: 565px;
+	font-size: 8pt;
+	color: #797983;
+	text-align: center;
+	border: 0px;
+}
+.item {
+	white-space: nowrap;
+}
+
+/* STRONG, USED IN EXIF TABLE */
+strong {
+	font-size: 8pt;
+	color: #ccccff;
+}
+
+/* COMMENT TABLE */
+.table-comments {
+	font-size: 8pt;
+	color: #797983;
+	text-decoration: none;
+	border: 0px;
+	line-height: 10pt;
+   text-align: left;
+}
+
+/* COMMENT DATE, USER ETC. */
+.comment-headline {
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+}
+
+.comment-aboveline {
+	width: 550px;
+	height: 20px;
+	vertical-align: bottom;
+	border-bottom: 1px solid #797983;
+	padding: 5px;
+}
+
+/* THE COMMENT */
+.comment-belowline {
+	width: 550px;
+	height: 20px;
+	vertical-align: top;
+	padding: 5px;
+}
+
+/* AUTO SCROLL BARS IN TEXTAREAS */
+textarea {
+	overflow: auto;
+}
+
+/* COMMENT INPUT FIELD */
+.comment-textfield {
+   border: 1px solid #3E3E3E;
+	background-color: #262626;
+	color: #CCCCFF;
+}
+
+/* COMMENT INPUT FIELD ERROR*/
+.error {
+	border: 1px solid red;
+	background-color: #262626;
+	color: #CCCCFF;
+	background-image: url(../images/warning_obj.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+}
+
+/* COMMENT SUBMIT BUTTON */
+.comment-button {
+	font-size: 8pt;
+	color: #797983;
+	background-color: #262626;
+   border: 1px solid #3E3E3E;
+	padding: 2px;
+}
+
+/* POWERED BY MG2 CREDITS (DO NOT REMOVE FROM SCRIPT!) */
+.credits {
+	font-size: 8pt;
+	color: #797983;
+   text-align: center;
+}
+
+/* BODY PROPERTIES */
+.mg2body  {
+	font-family: tahoma, verdana, arial, helvetica, sans-serif;
+   font-size: 9pt;
+	color: #797983;
+	background-color: #2d2d2d;
+	margin: 0px;
+   padding: 0px;
+}
+
+/* LINK PROPERTIES */
+.mg2body a:link, .mg2body a:visited {
+   color: #ccccff; text-decoration: none;
+}
+.mg2body a:hover, .mg2body a:visited:hover { 
+   color: #5F79D8; text-decoration: none;
+}

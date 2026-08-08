@@ -1,0 +1,11 @@
+.DS_Store
+php_errorlog
+server-backups/
+tmp/
+
+# Runtime gallery content and generated databases
+pictures/*
+!pictures/.gitkeep
+data/*
+!data/.gitkeep
+!data/.htaccess

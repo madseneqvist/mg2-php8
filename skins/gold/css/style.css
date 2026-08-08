@@ -1,0 +1,260 @@
+/* THUMB :  WIDTH, HEIGHT & FONT */
+table.thumb td a, .table.thumb td a:link, .table.thumb td a:visited, .table.thumb td a:hover, .table.thumb td a:visited:hover {
+   color: #E2E2E2;
+	font-size: 9pt;
+   display: block;
+   padding-top: 5px;
+   padding-left: 3px;
+   padding-right: 3px;
+	padding-bottom: 2px;
+   text-decoration: none;
+   width: 158px;
+	_height:		208px; /*IE up to version 6*/
+	min-height: 208px;
+	max-height: 500px;
+}
+/* THUMB : COLORS */
+table.thumb td a:link, table.thumb td a:visited {
+	background-color: #2D2D2D;
+	border: 1px solid #434343;
+	text-decoration: none;
+}
+/* THUMB : COLORS : HOVER */
+table.thumb td a:hover {
+	background-color: #2D2D2D;
+	border-bottom: 1px solid #FFCC11;
+}
+/* SUBFOLDER : WIDTH, HEIGHT & FONT  */
+table.subfolder td a, .table.subfolder td a:link, .table.subfolder td a:visited, .table.subfolder td a:hover, .table.subfolder td a:visited:hover {
+	color: #5B5B65;
+	text-align: center;
+	font-size: 9pt;
+	letter-spacing: 1px;
+   display: block;
+   padding-top: 5px;
+   padding-left: 3px;
+   padding-right: 3px;
+	padding-bottom: 5px;
+   text-decoration: none;
+   width: 158px;
+	_height:		206px; /*IE up to version 6*/
+	min-height: 206px;
+	max-height: 500px;
+}
+table.marknew td a {
+	background-image: url(../images/new.gif);
+   background-repeat: no-repeat;
+	background-position: bottom right;
+}
+/* SUBFOLDER : COLORS */
+table.subfolder td a:link, table.subfolder td a:visited {
+   background-color: #2D2D2D;
+   border: 1px solid #121212;
+	text-decoration: none;
+}
+/* SUBFOLDER : COLORS : HOVER */
+table.subfolder td a:hover {
+   background-color: #2D2D2D;
+   border: 1px solid #FFCC11;
+}
+/* ALL : MARGIN */
+table.subfolder, table.thumb {
+   border-collapse: collapse;
+	text-align:center;
+   margin: 15px;
+}
+/* ALL : THUMB BORDERS */
+table.border td a .thumb, table.thumb td a .thumb{
+   border: 5px solid #000000;
+}
+table.subfolder td a img, table.thumb td a img{
+   border: 0;
+}
+/* TABLE ABOVE HEADLINE */
+.table-top {
+	font-size: 8pt;
+	text-decoration: none;
+   vertical-align: top;
+	height: 20px;
+	border: 0;
+}
+
+/* HEADLINE BAR */
+.table-headline {
+	text-decoration: none;
+   vertical-align: top;
+	text-align: left;
+	height: 30px;
+	background-color: #000000;
+	padding: 3px;
+	color: #E2E2E2;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #434343;
+}
+.headline{
+	font-family: microsoft sans serif, tahoma, verdana, arial, helvetica;
+	letter-spacing: 5px;
+	text-align:center;
+	color: #E2E2E2;
+   font-size: 11pt;
+}
+
+/* FOLDER INTRO TEXT */
+.introtext {
+   margin: 6px 12px 6px 12px;
+	text-align: left;
+	color: #BDBDBD;
+	letter-spacing: 2px;
+}
+
+/* NAVIGATION THUMBS PROPERTIES */
+table.minithumb .activ {
+   background-color: #B9BBFF;
+   border: 3px solid black;
+}
+table.minithumb .inactiv {
+   border: 0px;
+}
+
+/* VIEWIMAGE IMAGE PROPERTIES */
+.viewimage {
+   border: 20px solid #000000;
+	background-color: #2D2D2D;
+}
+
+/* ICONBAR IN HEADLINE */
+.iconbar{
+	text-align: left;
+   vertical-align: top;
+	padding-left: 5px;
+}
+
+/* IMAGE DESCRIPTION */
+.description {
+	font-size: 8pt;
+	font-weight: bold;
+	text-align: center;
+	color: #BDBDBD;
+	text-decoration: none;
+}
+
+/* COPYRIGHT NOTICE */
+.copyright {
+	font-size: 9pt;
+	color: #797983;
+   text-align: center;
+}
+
+/* EXIF TABLE */
+.exif {
+	width: 565px;
+	font-size: 8pt;
+	color: #7F818B;
+	text-align: center;
+	border: 0;
+}
+.item {
+	white-space: nowrap;
+}
+
+/* STRONG, USED IN EXIF TABLE */
+strong {
+	font-size: 9pt;
+	color: #E2E2E2;
+}
+
+/* COMMENT TABLE */
+.table-comments {
+	font-size: 8pt;
+	color: #7F818B;
+	text-decoration: none;
+	border: 0px;
+	line-height: 10pt;
+   text-align: left;
+}
+
+/* COMMENT DATE, USER ETC. */
+.comment-headline {
+	font-size: 9pt;
+	font-weight: bold;
+	text-align: center;
+	height: 30px;
+}
+
+.comment-aboveline {
+	font-size: 8pt;
+	text-align: left;
+	color: #7F818B;
+	text-decoration: none;
+	font-style: italic;
+	border: 0px;
+	height: 30px;
+	vertical-align: bottom;
+}
+
+/* THE COMMENT */
+.comment-belowline {
+	font-size: 8pt;
+	text-align: left;
+	color: #7F818B;
+	text-decoration: none;
+	font-style: italic;
+	border-top: 1px solid #797983;
+}
+
+/* AUTO SCROLL BARS IN TEXTAREAS */
+textarea {
+	overflow: auto;
+}
+
+/* COMMENT INPUT FIELD */
+.comment-textfield {
+   border: 1px solid #121212;
+	background-color: #2D2D2D;
+	color: #BDBDBD;
+}
+
+/* COMMENT INPUT FIELD ERROR*/
+.error {
+	border: 1px solid red;
+	background-color: #2D2D2D;
+	color: #BDBDBD;
+	background-image: url(../images/warning_obj.gif);
+	background-position: right top;
+	background-repeat: no-repeat;
+	padding-right: 16px;
+}
+
+/* COMMENT SUBMIT BUTTON */
+.comment-button {
+	color: #7F818B;
+	background-color: #2D2D2D;
+   border: 1px solid #121212;
+	padding: 2px;
+}
+
+/* POWERED BY MG2 CREDITS (DO NOT REMOVE FROM SCRIPT!) */
+.credits {
+	font-size: 8pt;
+	color: #797983;
+   text-align: center;
+}
+
+/* BODY PROPERTIES */
+.mg2body {
+	font-family: tahoma, arial, helvetica, verdana;
+   font-size: 10pt;
+	text-align: justify;
+	color: #7F818B;
+	background-color: #272727;
+	margin: 0px;
+   padding: 0px;
+}
+
+/* LINK PROPERTIES */
+.mg2body a:link, .mg2body a:visited {
+   color: #FFCC11; text-decoration: none;
+}
+.mg2body a:hover, .mg2body a:visited:hover { 
+   color: #F8FB88; text-decoration: none;
+}
