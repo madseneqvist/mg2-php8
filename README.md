@@ -2,7 +2,26 @@
 
 MG2 PHP 8 is an independent, community-maintained revival of **MG2 0.5.1**, originally created by **Thomas Rybak** at [MiniGal](http://www.minigal.dk/), with the **kh_mod 0.2.1** extensions from [tangata.de](http://www.tangata.de/kh_mod/).
 
-The goal is to preserve MG2's small, flat-file, dependency-free photo gallery while making it usable on PHP 8 and addressing known legacy security problems. It does not require a SQL database.
+## A gallery from the independent web
+
+MG2 comes from an earlier web: before social-media feeds became the place where photographs were expected to live, before WordPress portfolio themes became the default, and from the same pioneering period in which services such as Flickr first appeared.
+
+If you wanted to publish a photographic portfolio then, you rented some web space, uploaded your own gallery, and kept control of the result. Your photographs stayed on your server. You chose the presentation, organized the albums, protected private work with passwords, and were not dependent on an algorithm, advertising platform, subscription, or changing terms of service.
+
+That remains the appeal of MG2. It is a small, direct gallery for people who want to own and present their photographs on their own website. This revival preserves that independent, uncomplicated approach while making the application usable on PHP 8 and addressing known legacy security problems.
+
+## Features
+
+- **Self-hosted and under your control** — photographs and gallery data remain on your server.
+- **Password-protected galleries** — share private albums without making the complete gallery public.
+- **EXIF display** — show camera, exposure, ISO, focal length, and other available image metadata.
+- **Fast and lightweight** — flat-file storage, generated thumbnail caching, and no SQL database or application framework.
+- **Simple web administration** — create folders, upload and organize photographs, edit descriptions, and configure the gallery in a browser.
+- **Nine bundled skins** — choose a presentation style or create a custom skin.
+- **Slideshows, comments, navigation, and folder thumbnails** — the essential features of a standalone photographic portfolio.
+- **Optional Google Analytics 4 support** — configure a Measurement ID from the admin interface or leave analytics disabled.
+- **Free and open source** — distributed under the GNU General Public License.
+- **Dependency-free deployment** — upload the files to ordinary PHP hosting and run the browser installer.
 
 This repository contains application code only. Photographs, gallery databases, settings, logs, passwords, and server backups are intentionally excluded.
 
